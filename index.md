@@ -7,14 +7,14 @@ tagline: 学习和研究互联网客户端javascript方面的技术
 
 ## 常用工具 ##
 
-- [[GitHub](https://github.com/gruntjs/)] Grunt ： 一个自动化的项目构建工具 [[中文文档](http://www.gruntjs.org/)] [[英文文档](http://www.gruntjs.com/)]
-- [[GitHub](https://github.com/jquery/qunit)] QUnit ：一个javascript的单元测试框架 [[QUnit官网](http://qunitjs.com/)] [[Grunt插件](https://github.com/gruntjs/grunt-contrib-qunit)]
+- [[GitHub](https://github.com/gruntjs/)] Grunt ： 一个自动化的项目构建工具 [[中文文档](https://www.gruntjs.org/)] [[英文文档](https://www.gruntjs.com/)]
+- [[GitHub](https://github.com/jquery/qunit)] QUnit ：一个javascript的单元测试框架 [[QUnit官网](https://qunitjs.com/)] [[Grunt插件](https://github.com/gruntjs/grunt-contrib-qunit)]
 
 ## 常用教程 ##
 
-- [windows下安装jekyll](http://aotee.com/windows-installation-jekyll) - [阿泉的博客](http://aotee.com/)
-- [Jekyll在Windows下面中文编码问题解决方案](http://www.cnblogs.com/aleda/articles/Jekyll-in-Windows-following-Chinese-encoding-problem-solutions.html)
-- [windows下本地jekyll博客搭建手记](http://blog.jsfor.com/skill/2013/09/07/jekyll-local-structures-notes/)
+- [windows下安装jekyll](https://aotee.com/windows-installation-jekyll) - [阿泉的博客](https://aotee.com/)
+- [Jekyll在Windows下面中文编码问题解决方案](https://www.cnblogs.com/aleda/articles/Jekyll-in-Windows-following-Chinese-encoding-problem-solutions.html)
+- [windows下本地jekyll博客搭建手记](https://blog.jsfor.com/skill/2013/09/07/jekyll-local-structures-notes/)
 
 ## 学习项目 ##
 
@@ -44,8 +44,8 @@ tagline: 学习和研究互联网客户端javascript方面的技术
 
 ## 团组成员 ##
 
-- [周培公](http://www.peigong.net/) - [GitHub](https://github.com/peigong)
-- [听歌](http://tingge.github.io) - [GitHub](https://github.com/TingGe)
+- [周培公](https://www.peigong.net/) - [GitHub](https://github.com/peigong)
+- [听歌](https://tingge.github.io) - [GitHub](https://github.com/TingGe)
 - [尘埃](https://github.com/chenai1112)
 - [onionyy](https://github.com/onionyy)
 - [geekbaba](https://github.com/geekbaba)

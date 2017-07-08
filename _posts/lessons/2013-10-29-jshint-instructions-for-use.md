@@ -7,7 +7,7 @@ tags : [开发工具]
 ---
 {% include JB/setup %}
 
-> 本文全文转自[JSHint 使用说明(http://zhang.zipeng.info/vimwiki/Entries/Reference/Tools/jshint.html)](http://zhang.zipeng.info/vimwiki/Entries/Reference/Tools/jshint.html)。
+> 本文全文转自[JSHint 使用说明(https://zhang.zipeng.info/vimwiki/Entries/Reference/Tools/jshint.html)](https://zhang.zipeng.info/vimwiki/Entries/Reference/Tools/jshint.html)。
 
 ## JSHint介绍 ##
 

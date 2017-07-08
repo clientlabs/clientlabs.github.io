@@ -13,7 +13,7 @@ tags : [开发工具, Grunt, 自动构建]
 
 Grunt是一个自动化的项目构建工具。Grunt和Grunt的插件都是通过Node.js的包管理器npm来安装和管理的。
 
-如果还没有安装Node.js，需要先从[Node.js网站(http://nodejs.org/)](http://nodejs.org/)下载安装。
+如果还没有安装Node.js，需要先从[Node.js网站(https://nodejs.org/)](https://nodejs.org/)下载安装。
 
 > Node.js安装中，以及后继的其他安装中，可能需要系统管理员权限。
 
@@ -47,7 +47,7 @@ Grunt是一个自动化的项目构建工具。Grunt和Grunt的插件都是通�
 1. 进入项目目录(在命令行窗口定位到项目目录；在windows系统下，也可以进入项目文件夹后，按Shift+鼠标右键，打开右键菜单，选择“在此处打开命令窗口(W)”)。
 2. 在命令行中，运行 `npm install`，安装项目相关依赖(插件，Grunt内置任务等依赖)。
 
-> 有些Grunt插件，比如JSDoc3插件，需要在命令行中可以执行git命令。最好先安装一个msysgit(http://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
+> 有些Grunt插件，比如JSDoc3插件，需要在命令行中可以执行git命令。最好先安装一个msysgit(https://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
 
 ### 执行Grunt构建 ###
 
@@ -87,7 +87,7 @@ Grunt是一个自动化的项目构建工具。Grunt和Grunt的插件都是通�
 
 	git clone https://github.com/clientlabs/grunt-init-gruntfile.git ./.grunt-init/gruntfile
 
-> 要想使用上述命令，需要先安装一个msysgit(http://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
+> 要想使用上述命令，需要先安装一个msysgit(https://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
 
 最终的文件目录结构，如下：
 
@@ -104,8 +104,8 @@ Grunt是一个自动化的项目构建工具。Grunt和Grunt的插件都是通�
 > 请注意，此模板将在当前目录中生成文件，如果你不想覆盖现有文件，一定要使用一个新的空目录。
 
 ## 参考资料 ##
-- [Node.js 官网(http://nodejs.org)](http://nodejs.org)
-- [Grunt 官网](http://www.gruntjs.com) - [[GitHub](https://github.com/gruntjs/)] [[中文文档](http://www.gruntjs.org/)]
-- [git工具的安装](http://windows.github.com/)
+- [Node.js 官网(https://nodejs.org)](https://nodejs.org)
+- [Grunt 官网](https://www.gruntjs.com) - [[GitHub](https://github.com/gruntjs/)] [[中文文档](https://www.gruntjs.org/)]
+- [git工具的安装](https://windows.github.com/)
 - [其他常用 grunt-init 模板](https://github.com/gruntjs/)
-- [grunt-init 自定义模板开发](http://www.gruntjs.org/article/project_scaffolding.html)
+- [grunt-init 自定义模板开发](https://www.gruntjs.org/article/project_scaffolding.html)

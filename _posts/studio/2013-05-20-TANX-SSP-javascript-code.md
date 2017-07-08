@@ -28,14 +28,14 @@ tags: [TANX, SSP, AdExchange, 广告]
 
 ### TANX SSP的系统入口 ###
 
-做为TANX SSP的系统入口，需要在网站(如[有问必答](http://www.120ask.com/zxmrk/28/28109815.htm))上嵌入阿里妈妈的广告调度代码。如：
+做为TANX SSP的系统入口，需要在网站(如[有问必答](https://www.120ask.com/zxmrk/28/28109815.htm))上嵌入阿里妈妈的广告调度代码。如：
 
     <script type="text/javascript">
         alimama_pid="mm_37227883_3484494_11371704";
         alimama_width=300;
         alimama_height=250;
     </script>
-    <script src="http://a.alimama.cn/inf.js" type="text/javascript"></script>
+    <script src="https://a.alimama.cn/inf.js" type="text/javascript"></script>
 
 以上广告代码中的关键信息意义如下：
 
@@ -52,8 +52,8 @@ tags: [TANX, SSP, AdExchange, 广告]
 
     var l = {
         lt_pkgs: {
-            inf: "http://a.alimama.cn/",
-            packages: "http://a.alimama.cn/inf/"
+            inf: "https://a.alimama.cn/",
+            packages: "https://a.alimama.cn/inf/"
         },
         lt_v: "1.1.5",
         lt_t: "20130523.js"
@@ -79,9 +79,9 @@ kslite框架加载模块入口点（inf/main.js）脚本时，会携带参数。
 
 在模块的入口点（inf/main.js）脚本中，负责向常规广告调度系统发出广告调度请求。
 
-### 常规的广告调度系统（http://p.tanx.com/ex） ###
+### 常规的广告调度系统（https://p.tanx.com/ex） ###
 
-提供常规广告调度服务的URL地址是http://p.tanx.com/ex，负责接收由阿里妈妈广告前端系统发起的广告调度请求，进行常规的、不限于TANX SSP的广告调度。
+提供常规广告调度服务的URL地址是https://p.tanx.com/ex，负责接收由阿里妈妈广告前端系统发起的广告调度请求，进行常规的、不限于TANX SSP的广告调度。
 
 #### 广告调度请求的参数 ####
 
@@ -107,7 +107,7 @@ kslite框架加载模块入口点（inf/main.js）脚本时，会携带参数。
     	}, 
     	p = { 
         	c : 'gbk', 
-        	s : 'http://cdn.tanx.com/t/tanxssp.js' 
+        	s : 'https://cdn.tanx.com/t/tanxssp.js' 
     	}; 
 
 主要定义的是：
@@ -135,7 +135,7 @@ kslite框架加载模块入口点（inf/main.js）脚本时，会携带参数。
 
     var l = {
         lt_pkgs: {
-            tanxssp: "http://cdn.tanx.com/t/",
+            tanxssp: "https://cdn.tanx.com/t/",
             charset: "gbk"
         },
         lt_v: "1.0.0",
@@ -144,7 +144,7 @@ kslite框架加载模块入口点（inf/main.js）脚本时，会携带参数。
 
 与其不同的是，对同步加载时需要的模块入口点地址也进行了定义。如：
 
-    var a = "http://cdn.tanx.com/t/tanxssp/main.js?_t=20130516";
+    var a = "https://cdn.tanx.com/t/tanxssp/main.js?_t=20130516";
 
 kslite框架会异步或同步的加载模块的入口文件（tanxssp/main.js）。
 
@@ -162,16 +162,16 @@ kslite框架会异步或同步的加载模块的入口文件（tanxssp/main.js�
 
 当客户端存有TANX域的Cookie时，携带Cookie参数。没有Cookie，则不必携带。
 
-在模块的入口点（tanxssp/main.js）脚本中，负责组装广告请求参数，向TANX广告调度系统(http://toruk.tanx.com/ex)发出广告调度请求。
+在模块的入口点（tanxssp/main.js）脚本中，负责组装广告请求参数，向TANX广告调度系统(https://toruk.tanx.com/ex)发出广告调度请求。
 
 同时，在模块的入口点（tanxssp/main.js）脚本中，也定义了TANX广告调度服务响应后，用于回调执行的函数。如：
 
     var k = "jsonp_callback_" + parseInt(Math.random() * 100000, 10);
     window[k] = function(s) {... ...}
 
-### TANX广告调度系统(http://toruk.tanx.com/ex) ###
+### TANX广告调度系统(https://toruk.tanx.com/ex) ###
 
-提供TANX广告调度服务的URL地址是http://toruk.tanx.com/ex，负责接收由TANX广告前端系统发起的广告调度请求。
+提供TANX广告调度服务的URL地址是https://toruk.tanx.com/ex，负责接收由TANX广告前端系统发起的广告调度请求。
 
 这里的toruk.tanx.com，是由常规广告调度服务器投放TANX SSP广告时，在200OK的响应中确定的TANX广告调度服务使用的域名。
 
@@ -211,14 +211,14 @@ kslite框架会异步或同步的加载模块的入口文件（tanxssp/main.js�
 - cbh：3412
 - cbw：1423
 - dx：1
-- u：当前访问页面的URL地址，如http://www.120ask.com/zxmrk/28/28109815.htm。
+- u：当前访问页面的URL地址，如https://www.120ask.com/zxmrk/28/28109815.htm。
 - pf
 - k：
 - tt：当前访问页面的title，如"月经期间如何丰胸 帮您免费 快速问医生 有问必答网"。
 
 #### 广告调度请求的响应 ####
 
-TANX广告调度系统(http://toruk.tanx.com/ex)响应的内容格式如下：
+TANX广告调度系统(https://toruk.tanx.com/ex)响应的内容格式如下：
 
     jsonp_callback_5021({
         "pid":"mm_37227883_3484494_11371704",
@@ -287,7 +287,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 
 ### 舞女页面 ###
 
-舞女页面是一个纯静态的HTML页面(地址如：http://strip.taobaocdn.com/tfscom/T1vEk0XatbXXbMsGbX.html），存储在CDN加速的静态服务器上（strip.taobaocdn.com），由一个系统拼装生成。
+舞女页面是一个纯静态的HTML页面(地址如：https://strip.taobaocdn.com/tfscom/T1vEk0XatbXXbMsGbX.html），存储在CDN加速的静态服务器上（strip.taobaocdn.com），由一个系统拼装生成。
 
 在前端系统执行回调函数，向舞女页面发起请求时，会携带一组参数。
 
@@ -302,7 +302,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 - refpos：,n,i
 - adx_type：0
 - pvid：ac17d84c7c3c51a9b39900000012325a_0
-- tanxdspv：http://rdstat.tanx.com/trd?&f=&k=a09e279ad7f7a12a&p=mm_37227883_3484494_11371704&pvid=ac1797214e9e51a9b39900000018dcd6
+- tanxdspv：https://rdstat.tanx.com/trd?&f=&k=a09e279ad7f7a12a&p=mm_37227883_3484494_11371704&pvid=ac1797214e9e51a9b39900000018dcd6
 
 舞女页面一手接住前端系统抛来的参数，另一手魔术般的调用淘宝的商品数据服务，将系统中需要展示的橱窗商品在广告位上一一展示出来。
 
@@ -324,7 +324,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 - refpos：,n,i
 - adx_type：0
 - pvid：ac17d84c7c3c51a9b39900000012325a_0
-- tanxdspv：http://rdstat.tanx.com/trd?&f=&k=a09e279ad7f7a12a&p=mm_37227883_3484494_11371704&pvid=ac1797214e9e51a9b39900000018dcd6
+- tanxdspv：https://rdstat.tanx.com/trd?&f=&k=a09e279ad7f7a12a&p=mm_37227883_3484494_11371704&pvid=ac1797214e9e51a9b39900000018dcd6
 - refpid：tt_37227883_3484494_11371704
 
 **Cookie参数**
@@ -378,7 +378,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 
 ### 淘宝商品特征的数据服务 ###
 
-淘宝商品特征数据服务的URL是http://show.re.taobao.com/feature.htm，接收舞女页面的请求参数，根据一个业务逻辑，把客户端需要展示的淘宝商品数据返回给舞女页面。
+淘宝商品特征数据服务的URL是https://show.re.taobao.com/feature.htm，接收舞女页面的请求参数，根据一个业务逻辑，把客户端需要展示的淘宝商品数据返回给舞女页面。
 
 如果广告投放的淘宝商品是一组促销的商品，则请求这个服务，获取实时的促销信息。如果不是促销的商品，则不需要请求这个实时的服务。
 
@@ -453,7 +453,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 
 #### 加载前端系统文件 ####
 
-广告点击分析前端系统的URL地址是http://cdn.tanx.com/t/tanxclick.js。
+广告点击分析前端系统的URL地址是https://cdn.tanx.com/t/tanxclick.js。
 
 在加载的时候，可以带有参数。列表如下：
 
@@ -472,7 +472,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 
 ### 点击重定向统计分析 ###
 
-进行点击重定向统计分析的URL地址是：http://rdstat.tanx.com/trd。
+进行点击重定向统计分析的URL地址是：https://rdstat.tanx.com/trd。
 
 当用户在点击广告进行重定向跳转的时候，发出统计请求。参数如下：
 
@@ -492,7 +492,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 
 ### 点击重定向统计计数 ###
 
-提供点击重定向统计计数服务的URL地址是：http://redirect.simba.taobao.com/rd。当用户点击广告的时候，负责进行点击的统计计数，并根据参数跳转至最终的着陆页面（landingpage）。
+提供点击重定向统计计数服务的URL地址是：https://redirect.simba.taobao.com/rd。当用户点击广告的时候，负责进行点击的统计计数，并根据参数跳转至最终的着陆页面（landingpage）。
 
 点击跳转时的参数如下：
 
@@ -504,7 +504,7 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 **GET参数**
 
 - w：mmp4ptest
-- f：着陆页面的URL地址，如http://tao.etao.com/auction?keyword=%C5%A3%D7%D0%BF%E3&catid=162205&refpid=tt_37227883_3484494_11371704&digest=E4F72AA836C280635D4B68077272D06E&crtid=204145027&itemid=19743755977&adgrid=191281107&eurl=http%3A%2F%2Fclick.simba.taobao.com%2Fcc_im%3Fp%3D%26s%3D110631805%26k%3D280%26e%3DZWZhqM4zvWg7cV%252Bisqn22t8bSgKjIMeIJv0WlAX%252BtYtQbbruHRRnvg59GO4ZnjechSzD2MI9ae0VcWHyHmjBU7uAJG68Oxh9pxE1ZBFsqdzEfoDg798s3B%252Bogj9kofCvUDUUDqa8gXYHDX7zWtfaOqb5dFReHwaR8UTulyn1o2Q4RXgcXpj38XMwXMmOtz2P0ksqglpB1x5n3laIHMmWXhdz%252BXgtQUth%252B3oHmwlYJqWdUREbe1MRAqlvZDS33RA0xc3vCBcBeda%252Fm6b4moZYyw%253D%253D&refpos=222_102680_25,n,i
+- f：着陆页面的URL地址，如https://tao.etao.com/auction?keyword=%C5%A3%D7%D0%BF%E3&catid=162205&refpid=tt_37227883_3484494_11371704&digest=E4F72AA836C280635D4B68077272D06E&crtid=204145027&itemid=19743755977&adgrid=191281107&eurl=http%3A%2F%2Fclick.simba.taobao.com%2Fcc_im%3Fp%3D%26s%3D110631805%26k%3D280%26e%3DZWZhqM4zvWg7cV%252Bisqn22t8bSgKjIMeIJv0WlAX%252BtYtQbbruHRRnvg59GO4ZnjechSzD2MI9ae0VcWHyHmjBU7uAJG68Oxh9pxE1ZBFsqdzEfoDg798s3B%252Bogj9kofCvUDUUDqa8gXYHDX7zWtfaOqb5dFReHwaR8UTulyn1o2Q4RXgcXpj38XMwXMmOtz2P0ksqglpB1x5n3laIHMmWXhdz%252BXgtQUth%252B3oHmwlYJqWdUREbe1MRAqlvZDS33RA0xc3vCBcBeda%252Fm6b4moZYyw%253D%253D&refpos=222_102680_25,n,i
 - k：edce2b64d0a4b4b1
 - pvid：ac17d84c7c3c51a9b39900000012325a_0
 - p：广告位编号，如tt_37227883_3484494_11371704
@@ -529,13 +529,13 @@ jsonp_callback_5021是在模块的入口点（tanxssp/main.js）脚本中定义�
 
 TANX前端系统的模块入口点（tanxssp/main.js）脚本在完成了广告任务后，还负有为阿里系的产品识别用户的重要职责。
 
-如果发现客户端还没有用户Cookie标识，则创建一个隐身的iframe，去加载阿里系的Cookie灯塔入口（http://cdn.tanx.com/t/acookie/acbeacon2.html）。
+如果发现客户端还没有用户Cookie标识，则创建一个隐身的iframe，去加载阿里系的Cookie灯塔入口（https://cdn.tanx.com/t/acookie/acbeacon2.html）。
 
 灯塔入口的响应是一个纯粹的HTML文件，负责创建一组img标签，请求TANX、淘宝和阿里妈妈的Cookie标识服务。
 
 ### TANX系统的Cookie标识服务 ###
 
-TANX系统的Cookie标识服务地址是：http://acookie.tanx.com/1.gif。
+TANX系统的Cookie标识服务地址是：https://acookie.tanx.com/1.gif。
 
 #### 请求Cookie服务 ####
 
@@ -544,11 +544,11 @@ TANX系统的Cookie标识服务地址是：http://acookie.tanx.com/1.gif。
 **GET参数**
 
 - cache：39
-- pre：http://www.120ask.com/zxmrk/28/28109815.htm
+- pre：https://www.120ask.com/zxmrk/28/28109815.htm
 
 #### 阿里妈妈统计平台中转 ####
 
-在请求的过程中，302跳转至统一的Cookie服务平台（阿里妈妈统计平台中转，http://hz.mmstat.com/a）。
+在请求的过程中，302跳转至统一的Cookie服务平台（阿里妈妈统计平台中转，https://hz.mmstat.com/a）。
 
 跳转时携带一组参数，如下：
 
@@ -564,14 +564,14 @@ TANX系统的Cookie标识服务地址是：http://acookie.tanx.com/1.gif。
 
 #### 跳转回最初的请求 ####
 
-在阿里妈妈统计平台在写下cookie标识后，携带一组参数，再302跳转回最初的TANX Cookie服务地址（http://acookie.tanx.com/1.gif）。
+在阿里妈妈统计平台在写下cookie标识后，携带一组参数，再302跳转回最初的TANX Cookie服务地址（https://acookie.tanx.com/1.gif）。
 
 参数如下：
 
 **GET参数**
 
 - cache：546
-- pre：http://www.120ask.com/zxmrk/28/28109815.htm
+- pre：https://www.120ask.com/zxmrk/28/28109815.htm
 - XzOzGe85AA：1951151388
 - a3G4ApKGeL：ywhlurt-xX8LiWFSVw3T7ZlX7vEJe5yCfUrOuLDawE0_
 
@@ -581,7 +581,7 @@ TANX Cookie服务会写下如下的cookie标识：
 
 ### 淘宝系统的Cookie标识服务 ###
 
-淘宝系统的Cookie标识服务地址是：http://acookie.taobao.com/1.gif。
+淘宝系统的Cookie标识服务地址是：https://acookie.taobao.com/1.gif。
 
 #### 请求Cookie服务 ####
 
@@ -590,11 +590,11 @@ TANX Cookie服务会写下如下的cookie标识：
 **GET参数**
 
 - cache：546
-- pre：http://www.120ask.com/zxmrk/28/28109815.htm
+- pre：https://www.120ask.com/zxmrk/28/28109815.htm
 
 #### 阿里妈妈统计平台中转 ####
 
-在请求的过程中，302跳转至统一的Cookie服务平台（阿里妈妈统计平台中转，http://hz.mmstat.com/a）。
+在请求的过程中，302跳转至统一的Cookie服务平台（阿里妈妈统计平台中转，https://hz.mmstat.com/a）。
 
 跳转时携带一组参数，如下：
 
@@ -614,14 +614,14 @@ TANX Cookie服务会写下如下的cookie标识：
 
 #### 跳转回最初的请求 ####
 
-在阿里妈妈统计平台在写下cookie标识后，携带一组参数，再302跳转回最初的淘宝Cookie服务地址（http://acookie.taobao.com/1.gif）。
+在阿里妈妈统计平台在写下cookie标识后，携带一组参数，再302跳转回最初的淘宝Cookie服务地址（https://acookie.taobao.com/1.gif）。
 
 参数如下：
 
 **GET参数**
 
 - cache：546
-- pre：http://www.120ask.com/zxmrk/28/28109815.htm
+- pre：https://www.120ask.com/zxmrk/28/28109815.htm
 - XzOzGe85AA：895282041
 - a3G4ApKGeL：Aw5aWvwYEK.tZE-0ecjMOxKY73ASRCO4cPGbgChnZSg_
 
@@ -633,7 +633,7 @@ TANX Cookie服务会写下如下的cookie标识：
 
 ### 阿里妈妈系统的Cookie标识服务 ###
 
-淘宝系统的Cookie标识服务地址是：http://acookie.alimama.com/1.gif。
+淘宝系统的Cookie标识服务地址是：https://acookie.alimama.com/1.gif。
 
 #### 请求Cookie服务 ####
 
@@ -642,11 +642,11 @@ TANX Cookie服务会写下如下的cookie标识：
 **GET参数**
 
 - cache：546
-- pre：http://www.120ask.com/zxmrk/28/28109815.htm
+- pre：https://www.120ask.com/zxmrk/28/28109815.htm
 
 #### 阿里妈妈统计平台中转 ####
 
-在请求的过程中，302跳转至统一的Cookie服务平台（阿里妈妈统计平台中转，http://hz.mmstat.com/a）。
+在请求的过程中，302跳转至统一的Cookie服务平台（阿里妈妈统计平台中转，https://hz.mmstat.com/a）。
 
 跳转时携带一组参数，如下：
 
@@ -666,14 +666,14 @@ TANX Cookie服务会写下如下的cookie标识：
 
 #### 跳转回最初的请求 ####
 
-在阿里妈妈统计平台在写下cookie标识后，携带一组参数，再302跳转回最初的阿里妈妈Cookie服务地址（http://acookie.alimama.com/1.gif）。
+在阿里妈妈统计平台在写下cookie标识后，携带一组参数，再302跳转回最初的阿里妈妈Cookie服务地址（https://acookie.alimama.com/1.gif）。
 
 参数如下：
 
 **GET参数**
 
 - cache：546
-- pre：http://www.120ask.com/zxmrk/28/28109815.htm
+- pre：https://www.120ask.com/zxmrk/28/28109815.htm
 - XzOzGe85AA：1922922509
 - a3G4ApKGeL：yRA2RMr5506V9xuekIeOaPbr8-P069UHRL-HX.fuJ.I_
 
@@ -693,7 +693,7 @@ img.alimama.cn存储系统中核心的静态的文件，比如通用图标、默
 
 10个淘宝商品的图片等资源分布在4个域名的服务器下，使浏览器可以并行的同时加载图片，而不必加载完一张图片，再加载下一张。
 
-以一张淘宝商品的图片地址（http://img01.taobaocdn.com/bao/uploaded/i1/1014142759/T2Njj8XbJXXXXXXXXX_!!1014142759.jpg_250x250.jpg）为例分析，大约知道以下设计意图：
+以一张淘宝商品的图片地址（https://img01.taobaocdn.com/bao/uploaded/i1/1014142759/T2Njj8XbJXXXXXXXXX_!!1014142759.jpg_250x250.jpg）为例分析，大约知道以下设计意图：
 
 - 除了商品上传的图片外，其他有关商品的静态文件资源，也是分布存储在几个域名的服务器下的。
 - 有与img01.taobaocdn.com对应的i1目录，说明这些资源即可以分布在4台服务器上，也可以合并存储在同一台服务器上，有良好的伸缩性。
@@ -715,6 +715,6 @@ img.alimama.cn存储系统中核心的静态的文件，比如通用图标、默
 
 ### 参考引用 ###
 
-- [TANX SSP 橱窗推广](http://c.tanx.com/)
-- [www.rtbchina.com](http://www.rtbchina.com)
-- [SOSO百科的TANX SSP词条](http://baike.soso.com/v59874706.htm)
+- [TANX SSP 橱窗推广](https://c.tanx.com/)
+- [www.rtbchina.com](https://www.rtbchina.com)
+- [SOSO百科的TANX SSP词条](https://baike.soso.com/v59874706.htm)

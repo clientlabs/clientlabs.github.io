@@ -48,20 +48,20 @@ tags : [Grunt插件, 项目组织]
 	  grunt.task.run('foo:' + n, 'bar:' + n, 'baz:' + n);
 	});
 
-参见Grunt文档的《常见问题-"动态"别名任务》([中文](http://www.gruntjs.org/article/frequently_asked_questions.html)/[英文](http://gruntjs.com/frequently-asked-questions))。
+参见Grunt文档的《常见问题-"动态"别名任务》([中文](https://www.gruntjs.org/article/frequently_asked_questions.html)/[英文](https://gruntjs.com/frequently-asked-questions))。
 
 
 ### Grunt配置编程处理在不同的文件中 ###
 
 将配置对象分拆出来，然后在Gruntfile.js中require进来，再将这些不同任务的对象组合成一个对象传递给grunt.initConfig。
 
-上述方案是在我提出问题（[有没有分拆Gruntfile.js的方案？(https://github.com/basestyle/grunt-cn/issues/34)](https://github.com/basestyle/grunt-cn/issues/34)）后，[TooBug](http://www.toobug.net)[[GitHub](https://github.com/TooBug)]和[Vincent Hou](https://github.com/qivhou)给出的解决方案。
+上述方案是在我提出问题（[有没有分拆Gruntfile.js的方案？(https://github.com/basestyle/grunt-cn/issues/34)](https://github.com/basestyle/grunt-cn/issues/34)）后，[TooBug](https://www.toobug.net)[[GitHub](https://github.com/TooBug)]和[Vincent Hou](https://github.com/qivhou)给出的解决方案。
 
 因为没有进一步展开，所以没有示例代码。
 
 ### 使用自定义任务把构建任务分解在不同的文件中 ###
 
-我在知乎上提出问题《[有什么方案可以把较为庞大的gruntfile分拆？(http://www.zhihu.com/question/21766711)](http://www.zhihu.com/question/21766711)》后,[墨磊](http://morlay.tla42.org/)[[GitHub](https://github.com/morlay)]给出的解决方案，基本上就是使用自定义任务把构建任务分解在不同的文件中的。
+我在知乎上提出问题《[有什么方案可以把较为庞大的gruntfile分拆？(https://www.zhihu.com/question/21766711)](https://www.zhihu.com/question/21766711)》后,[墨磊](https://morlay.tla42.org/)[[GitHub](https://github.com/morlay)]给出的解决方案，基本上就是使用自定义任务把构建任务分解在不同的文件中的。
 
 比如，在[gruntjs.com(https://github.com/gruntjs/gruntjs.com)](https://github.com/gruntjs/gruntjs.com)项目中，也是通过把blog、docs等任务从Gruntfile中分拆出来的。
 

@@ -9,7 +9,7 @@ tags : [开发工具]
 
 ## JSDoc样式的注释 ##
 
-> 选用JSDoc3作为注释规范，文档生成工具使用grunt-jsdoc，本文不再介绍选型过程和原因。对JSDoc3的深入学习使用，可以参考[入口教程http://usejsdoc.org/index.html](http://usejsdoc.org/index.html)。
+> 选用JSDoc3作为注释规范，文档生成工具使用grunt-jsdoc，本文不再介绍选型过程和原因。对JSDoc3的深入学习使用，可以参考[入口教程https://usejsdoc.org/index.html](https://usejsdoc.org/index.html)。
 
 JSDoc注释的样式如下例，与单行注释 `//` 和多行注释 `/**/` 不同，而是类似于JAVA的JDoc和PHP的PHPDoc。
 
@@ -42,7 +42,7 @@ JSDoc注释的样式如下例，与单行注释 `//` 和多行注释 `/**/` 不�
 
 > The parameter type can be a built-in JavaScript type, such as string or Object, or a JSDoc namepath to another symbol in your code. If you have written documentation for the symbol at that namepath, JSDoc will automatically link to the documentation for that symbol. You can also use a type expression to indicate, for example, that a parameter is not nullable or can accept any type; see the @type documentation for details.
 
-下面直接使用[http://usejsdoc.org/tags-param.html](http://usejsdoc.org/tags-param.html)文档中的例子，说明 `@param` 标签中如何使用参数名、参数类型和参数描述信息。
+下面直接使用[https://usejsdoc.org/tags-param.html](https://usejsdoc.org/tags-param.html)文档中的例子，说明 `@param` 标签中如何使用参数名、参数类型和参数描述信息。
 
 只有参数名的注释：
 
@@ -79,7 +79,7 @@ JSDoc注释的样式如下例，与单行注释 `//` 和多行注释 `/**/` 不�
 - `@return {Number} Sum of a and b`
 - `@return {Number|Array} Sum of a and b or an array that contains a, b and the sum of a and b.`
 
-> 参见：[http://usejsdoc.org/tags-returns.html](http://usejsdoc.org/tags-returns.html)
+> 参见：[https://usejsdoc.org/tags-returns.html](https://usejsdoc.org/tags-returns.html)
 
 ### 模块注释 ###
 
@@ -103,7 +103,7 @@ JSDoc注释的样式如下例，与单行注释 `//` 和多行注释 `/**/` 不�
 	// Use the inline {@link} tag to include a link within a free-form description.
 	/**
 	 * @see {@link foo} for further information.
-	 * @see {@link http://github.com|GitHub}
+	 * @see {@link https://github.com|GitHub}
 	 */
 	function bar() {}
 
@@ -124,7 +124,7 @@ JSDoc注释的样式如下例，与单行注释 `//` 和多行注释 `/**/` 不�
 
 例如，`@lends Sample.prototype` 表示下面的对象归属于Sample。
 
-较详尽的使用说明参见[http://usejsdoc.org/tags-lends.html](http://usejsdoc.org/tags-lends.html)。
+较详尽的使用说明参见[https://usejsdoc.org/tags-lends.html](https://usejsdoc.org/tags-lends.html)。
 
 有关类的定义和注释示例，如下：
 
@@ -178,7 +178,7 @@ JSDoc注释的样式如下例，与单行注释 `//` 和多行注释 `/**/` 不�
 
 Grunt的安装使用，请参考教程[《Grunt的安装和使用》](https://clientlabs.github.io/lessons/2013/10/15/installation-and-use-of-grunt/)。
 
-JSDoc某些配置有git依赖， 需要在命令行中可以执行git命令。最好先安装一个msysgit(http://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
+JSDoc某些配置有git依赖， 需要在命令行中可以执行git命令。最好先安装一个msysgit(https://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
 
 在Grunt中使用JSDoc3插件的配置参考如下：
 
@@ -197,7 +197,7 @@ JSDoc某些配置有git依赖， 需要在命令行中可以执行git命令。�
 
 ## 参考资料 ##
 
-- [JSDoc 主页](http://usejsdoc.org/index.html) - [GitHub](https://github.com/jsdoc3/jsdoc)
+- [JSDoc 主页](https://usejsdoc.org/index.html) - [GitHub](https://github.com/jsdoc3/jsdoc)
 - grunt-jsdoc-plugin Grunt任务插件 [NPM](https://npmjs.org/package/grunt-jsdoc) - [GitHub](https://github.com/krampstudio/grunt-jsdoc-plugin)
 - [JSDoc模板docstrap](https://github.com/terryweiss/docstrap)
-- [使用jsdoc生成组件API文档—jsdoc实战](http://www.36ria.com/5101)
+- [使用jsdoc生成组件API文档—jsdoc实战](https://www.36ria.com/5101)

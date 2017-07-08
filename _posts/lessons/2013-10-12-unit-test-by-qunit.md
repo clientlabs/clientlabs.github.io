@@ -9,7 +9,7 @@ tags : [开发工具, 单元测试]
 
 ## QUnit的简介 ##
 
-> 本文只介绍[Qunit](http://qunitjs.com/)的使用，不再介绍单元测试框架的选型过程。
+> 本文只介绍[Qunit](https://qunitjs.com/)的使用，不再介绍单元测试框架的选型过程。
 
 QUnit的官网介绍：
 
@@ -19,9 +19,9 @@ QUnit是一个强大的、简单易用的javascript单元测试框架。
 
 ### 下载QUnit ###
 
-可以到[QUnit官网(http://qunitjs.com)](http://qunitjs.com/)上下载qunit.js和qunit.css两个文件。
+可以到[QUnit官网(https://qunitjs.com)](https://qunitjs.com/)上下载qunit.js和qunit.css两个文件。
 
-虽然有[jQuery CDN(http://code.jquery.com/)](http://code.jquery.com/)和[GitHub托管(https://github.com/jquery/qunit)](https://github.com/jquery/qunit)的代码可用，但是为了稳定，还是下载了使用吧。
+虽然有[jQuery CDN(https://code.jquery.com/)](https://code.jquery.com/)和[GitHub托管(https://github.com/jquery/qunit)](https://github.com/jquery/qunit)的代码可用，但是为了稳定，还是下载了使用吧。
 
 ### QUnit上手应用 ###
 
@@ -99,7 +99,7 @@ QUnit Grunt任务(grunt-contrib-qunit)的使用，请参见GitHub上的说明[ht
 
 ### 安装PhantomJS ###
 
-> [PhantomJS(http://phantomjs.org/)](http://phantomjs.org/) 是一个无界面的WebKit浏览器引擎，还有配套的JavaScript API。它原生支持各种web标准技术：DOM处理，CSS选择器，JSON，Canvas，以及SVG。
+> [PhantomJS(https://phantomjs.org/)](https://phantomjs.org/) 是一个无界面的WebKit浏览器引擎，还有配套的JavaScript API。它原生支持各种web标准技术：DOM处理，CSS选择器，JSON，Canvas，以及SVG。
 。
 
 可以在命令行中使用以下的命令进行安装：
@@ -110,13 +110,13 @@ QUnit Grunt任务(grunt-contrib-qunit)的使用，请参见GitHub上的说明[ht
 
 ## 参考资料 ##
 
-- [JQuery团队打造的javascript单元测试工具QUnit介绍](http://www.cnblogs.com/nuaalfm/archive/2010/02/26/1674235.html)
-- [DalekJS – 基于 JavaScript 实现跨浏览器的自动化测试](http://www.tuicool.com/articles/JVRRbq)
-- [高效 JavaScript 单元测试](http://www.ibm.com/developerworks/cn/opensource/os-jstesting/)
-- [JavaScript的单元测试工具](http://select.yeeyan.org/view/213582/265887)
-- [虚拟座谈：JavaScript单元测试现状](http://www.infoq.com/cn/articles/javascript-unit-testing)
-- [javascript单元测试](http://www.cnblogs.com/frostbelt/archive/2012/08/03/2622302.html)
-- [Node.js 官网(http://nodejs.org)](http://nodejs.org)
-- [QUnit 官网](http://qunitjs.com/) - [GitHub](https://github.com/jquery/qunit)
-- [Grunt 官网](http://www.gruntjs.com) - [[GitHub](https://github.com/gruntjs/)] [[中文文档](http://www.gruntjs.org/)]
-- [PhantomJS官网(http://phantomjs.org)](http://phantomjs.org)
+- [JQuery团队打造的javascript单元测试工具QUnit介绍](https://www.cnblogs.com/nuaalfm/archive/2010/02/26/1674235.html)
+- [DalekJS – 基于 JavaScript 实现跨浏览器的自动化测试](https://www.tuicool.com/articles/JVRRbq)
+- [高效 JavaScript 单元测试](https://www.ibm.com/developerworks/cn/opensource/os-jstesting/)
+- [JavaScript的单元测试工具](https://select.yeeyan.org/view/213582/265887)
+- [虚拟座谈：JavaScript单元测试现状](https://www.infoq.com/cn/articles/javascript-unit-testing)
+- [javascript单元测试](https://www.cnblogs.com/frostbelt/archive/2012/08/03/2622302.html)
+- [Node.js 官网(https://nodejs.org)](https://nodejs.org)
+- [QUnit 官网](https://qunitjs.com/) - [GitHub](https://github.com/jquery/qunit)
+- [Grunt 官网](https://www.gruntjs.com) - [[GitHub](https://github.com/gruntjs/)] [[中文文档](https://www.gruntjs.org/)]
+- [PhantomJS官网(https://phantomjs.org)](https://phantomjs.org)
