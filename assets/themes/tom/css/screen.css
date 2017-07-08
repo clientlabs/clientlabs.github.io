@@ -20,7 +20,6 @@ body {
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
   text-align: center;
-  line-height: 1.75em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,17 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-bottom: 1em;
-}
-
-h2 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid #eee;
-}
-h3 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-bottom: 1px dashed #ccc;
 }
 
 p {
@@ -93,7 +81,7 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 80em;
+  width: 40em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
