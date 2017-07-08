@@ -48,3 +48,5 @@ tagline: 学习和研究互联网客户端javascript方面的技术
 - [听歌](http://tingge.github.io) - [GitHub](https://github.com/TingGe)
 - [尘埃](https://github.com/chenai1112)
 - [onionyy](https://github.com/onionyy)
+- [geekbaba](https://github.com/geekbaba)
+
