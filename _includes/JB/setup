@@ -15,7 +15,7 @@
 
     {% if site.JB.ASSET_PATH %}
       {% assign ASSET_PATH = site.JB.ASSET_PATH %}
-    {% elseif site.safe %}
+    {% elsif site.safe %}
       {% capture ASSET_PATH %}{{ site.cdn_url }}/assets/{% endcapture %}
     {% else %}
       {% if layout.theme.name %}
@@ -24,4 +24,4 @@
         {% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ page.theme.name }}{% endcapture %}
       {% endif %}
   {% endif %}
-{% assign jbcache = nil %}
+{% endcapture %}{% assign jbcache = nil %}
