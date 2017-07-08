@@ -15,7 +15,7 @@
 
     {% if site.JB.ASSET_PATH %}
       {% assign ASSET_PATH = site.JB.ASSET_PATH %}
-    {% elsif site.safe %}
+    {% elseif site.safe %}
       {% capture ASSET_PATH %}{{ site.cdn_url }}/assets/{% endcapture %}
     {% else %}
       {% if layout.theme.name %}
