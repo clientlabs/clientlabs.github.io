@@ -18,21 +18,21 @@ tagline: 学习和研究互联网客户端javascript方面的技术
 
 ## 学习项目 ##
 
-- [[GitHub](https://github.com/clientlab/advertisement)] advertisement ： 学习和研究广告投放系统的前端技术
-- [[GitHub](https://github.com/clientlab/analytics)] analytics ： 学习和研究监测分析系统的前端技术
+- [[GitHub](https://github.com/clientlabs/advertisement)] advertisement ： 学习和研究广告投放系统的前端技术
+- [[GitHub](https://github.com/clientlabs/analytics)] analytics ： 学习和研究监测分析系统的前端技术
 
 ## 工具项目 ##
 
-- [[GitHub](https://github.com/clientlab/grunt-clientlab-filter)] grunt-clientlab-filter ： 执行查找替换指定占位符的GRUNT任务
-- [[GitHub](https://github.com/clientlab/grunt-init-gruntfile)] grunt-init-gruntfile ： 使用grunt-init命令创建Client Lab常用的Gruntfile
-- [[GitHub](https://github.com/Bartvds/grunt-run-grunt)] [grunt-run-grunt](https://github.com/clientlab/grunt-run-grunt) ： 当前组织首页使用的博客引擎
+- [[GitHub](https://github.com/clientlabs/grunt-clientlabs-filter)] grunt-clientlabs-filter ： 执行查找替换指定占位符的GRUNT任务
+- [[GitHub](https://github.com/clientlabs/grunt-init-gruntfile)] grunt-init-gruntfile ： 使用grunt-init命令创建Client Lab常用的Gruntfile
+- [[GitHub](https://github.com/Bartvds/grunt-run-grunt)] [grunt-run-grunt](https://github.com/clientlabs/grunt-run-grunt) ： 当前组织首页使用的博客引擎
 
 ## 参考项目 ##
 
-- [[GitHub](https://github.com/mojombo/jekyll)] [jekyll](https://github.com/clientlab/jekyll) ： 当前组织首页使用的博客引擎
-- [[GitHub](https://github.com/plusjade/jekyll-bootstrap)] [jekyll-bootstrap](https://github.com/clientlab/jekyll-bootstrap) : 当前组织首页使用的博客引擎（使用了bootstrap框架）
-- [[GitHub](https://github.com/plusjade/themes.jekyllbootstrap.com)] [themes.jekyllbootstrap.com](https://github.com/clientlab/themes.jekyllbootstrap.com) : 博客引擎的皮肤项目
-- [[GitHub](https://github.com/jekyllbootstrap/theme-tom)] [theme-tom](https://github.com/clientlab/theme-tom) : 当前组织首页使用的博客引擎的项目
+- [[GitHub](https://github.com/mojombo/jekyll)] [jekyll](https://github.com/clientlabs/jekyll) ： 当前组织首页使用的博客引擎
+- [[GitHub](https://github.com/plusjade/jekyll-bootstrap)] [jekyll-bootstrap](https://github.com/clientlabs/jekyll-bootstrap) : 当前组织首页使用的博客引擎（使用了bootstrap框架）
+- [[GitHub](https://github.com/plusjade/themes.jekyllbootstrap.com)] [themes.jekyllbootstrap.com](https://github.com/clientlabs/themes.jekyllbootstrap.com) : 博客引擎的皮肤项目
+- [[GitHub](https://github.com/jekyllbootstrap/theme-tom)] [theme-tom](https://github.com/clientlabs/theme-tom) : 当前组织首页使用的博客引擎的项目
 
 ## 最新文章 ##
 

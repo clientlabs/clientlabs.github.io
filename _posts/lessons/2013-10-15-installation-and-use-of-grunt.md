@@ -81,11 +81,11 @@ Grunt是一个自动化的项目构建工具。Grunt和Grunt的插件都是通�
 
 建议使用如下的git clone命令把这个模板克隆到该目录：
 
-	git clone https://github.com/clientlab/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
+	git clone https://github.com/clientlabs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile
 
 在Windows平台上稍微有些不方便，但是可以在文件浏览器中输入%USERPROFILE%，定义到该目录下，然后执行如下命令：
 
-	git clone https://github.com/clientlab/grunt-init-gruntfile.git ./.grunt-init/gruntfile
+	git clone https://github.com/clientlabs/grunt-init-gruntfile.git ./.grunt-init/gruntfile
 
 > 要想使用上述命令，需要先安装一个msysgit(http://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
 

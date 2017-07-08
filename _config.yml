@@ -12,9 +12,9 @@ markdown: rdiscount
 title : 客户端技术实验室
 tagline: 客户端技术实验室
 author :
-  name : Client Lab
+  name : Client Labs
   email : peigong@foxmail.com
-  github : clientlab
+  github : clientlabs
   twitter : 
   feedburner : 
 
@@ -26,7 +26,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://clientlab.github.io
+production_url : http://clientlabs.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

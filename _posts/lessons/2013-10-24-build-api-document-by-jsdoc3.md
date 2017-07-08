@@ -176,7 +176,7 @@ JSDoc注释的样式如下例，与单行注释 `//` 和多行注释 `/**/` 不�
 
 ## Grunt自动构建的配置 ##
 
-Grunt的安装使用，请参考教程[《Grunt的安装和使用》](http://clientlab.github.io/lessons/2013/10/15/installation-and-use-of-grunt/)。
+Grunt的安装使用，请参考教程[《Grunt的安装和使用》](http://clientlabs.github.io/lessons/2013/10/15/installation-and-use-of-grunt/)。
 
 JSDoc某些配置有git依赖， 需要在命令行中可以执行git命令。最好先安装一个msysgit(http://msysgit.github.io/)，然后在环境变量中增加git的bin目录。
 

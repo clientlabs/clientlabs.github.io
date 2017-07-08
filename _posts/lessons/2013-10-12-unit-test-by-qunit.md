@@ -89,7 +89,7 @@ tests.js中的示例代码：
 
 ## 与Grunt构建工具的集成 ##
 
-> Grunt构建工具的安装和使用，关于参考教程[《Grunt的安装和使用》](http://clientlab.github.io/lessons/2013/10/15/installation-and-use-of-grunt/)
+> Grunt构建工具的安装和使用，关于参考教程[《Grunt的安装和使用》](http://clientlabs.github.io/lessons/2013/10/15/installation-and-use-of-grunt/)
 
 ### QUnit的Grunt任务 ###
 
